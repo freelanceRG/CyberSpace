@@ -1,0 +1,1191 @@
+
+/*=========================================Обнуление========================================*/
+
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+/*============================================*//*============================================*/
+
+body {
+	min-width: 1300px;
+}
+
+/*============================================*//*============================================*/
+
+/* Fonts
+
+	font-family: 'Orbitron', sans-serif;
+
+	font-family: 'Saira', sans-serif;
+
+	font-family: 'Prompt', sans-serif;
+
+*/
+
+/*============================================*//*============================================*/
+
+/*Свойства для общих классов*/
+
+.title {
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.link {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.text {
+	font-family: 'Prompt', sans-serif;
+}
+
+.info {
+	font-family: 'Saira', sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+/*============================================*//*============================================*/
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+/*============================================*//*============================================*/
+
+.header {
+	width: 100%;
+}
+
+.header__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+}
+
+.header__logo {
+	display: flex;
+}
+
+.header__icon {
+	flex: 0 0 100px;
+	margin: 0 15px 0 0;
+}
+
+.header__icon img {
+	max-width: 100%;
+}
+
+.header__title {
+	font-size: 35px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.header__menu {
+	
+}
+
+.header__list {
+	display: flex;
+}
+
+.header__list li {
+	margin: 0 0 0 40px;
+}
+
+.header__link {
+	font-size: 17px;
+	font-weight: 600;
+	font-style: italic;
+	color: #000;
+	padding: 0 0 5px 0;
+}
+
+.header__link:hover {
+	color: #6f2bc8;
+	border-bottom: 1px solid #6f2bc8;
+}
+
+/*============================================*//*============================================*/
+
+.header__promo {
+	width: 100%;
+	min-height: 750px;
+	background-image: url(../img/header/back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header__promo-block {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header__promo-item {
+	color: #6f2bc8;
+	margin: 200px 50px 0 0;
+}
+
+.header__promo-title {
+	font-size: 60px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0 0 30px 0;
+}
+
+.header__promo-info {
+	font-size: 23px;
+	font-style: italic;
+	margin: 0 0 40px 0;
+}
+
+.header__promo-btn {
+	display: flex;
+}
+
+.header__promo-link {
+	font-size: 24px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #6f2bc8;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 14px 40px;
+	transition: 0.5s all;
+}
+
+.header__promo-link:hover {
+	background-color: #fff;
+	color: #6f2bc8;
+	padding: 14px 60px;
+}
+
+/*============================================*//*============================================*/
+
+.content {
+
+}
+.content__title {
+	font-size: 40px;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	color: #6f2bc8;
+	margin: 80px 0;
+}
+
+/*Shooter prommo ==============================*//*===========================================*/
+
+#shooter {
+	width: 100%;
+	min-height: 750px;
+	background-image: url(../img/shooter/back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 0 80px 0;
+}
+
+.shooter__block {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	min-height: 750px;
+}
+
+.shooter__item {
+	flex: 0 0 50%;
+	color: #fff;
+	padding: 50px 0;
+}
+
+.shooter__title {
+	font-size: 50px;
+	font-weight: 800;
+	margin: 0 0 40px 0;
+}
+
+.shooter__info {
+	margin: 0 0 40px 0;
+}
+
+.shooter__btn {
+	display: flex;
+}
+
+.shooter__link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 15px 60px;
+	transition: 0.5s ease;
+}
+
+.shooter__link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 15px 80px;
+	transition: 0.5s ease;
+}
+
+/*============================================*//*============================================*/
+
+.shooter__games {
+
+}
+
+.shooter__games-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}	
+
+.shooter__games-image {
+
+}
+
+.shooter__games-image img {
+	max-width: 100%;
+}
+
+.shooter__games-item {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 25px 35px 25px;
+}
+
+.shooter__games-title {
+	font-size: 30px;
+	color: #6f2bc8;
+	margin: 0 0 25px 0;
+	position: relative;
+}
+
+.shooter__games-title:after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 100%;
+	height: 1px;
+	background-color: #6f2bc8;
+}
+
+.title-align {
+	text-align: right;
+	position: relative;
+}
+
+.title-align:before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 100%;
+	height: 1px;
+	background-color: #6f2bc8;
+}
+
+.shooter__games-info {
+	flex: 1 1 auto;
+	text-align: justify;
+	margin: 0 0 25px 0;
+}
+
+.shooter__games-btn {
+	display: flex;
+}
+
+.btn-align {
+	justify-content: flex-end;
+}
+
+.shooter__games-link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 12px 50px;
+	transition: 0.5s ease;
+}
+
+.shooter__games-link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 12px 60px;
+	transition: 0.5s ease;
+}
+
+/*============================================*//*============================================*/
+
+.fighting {
+	width: 100%;
+	min-height: 750px;
+	background-image: url(../img/fighting/back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 0 80px 0;
+}
+
+.fighting__block {
+	display: flex;
+	align-items: center;
+	min-height: 750px;
+	margin: 0 0 0 50px;
+	color: #fff;
+}
+
+.fighting__item {
+	flex: 0 0 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.fighting__title {
+	font-size: 50px;
+	font-weight: 800;
+	margin: 0 0 40px 0;
+}
+
+.fighting__info {
+	margin: 0 0 40px 0;
+}
+
+.fighting__btn {
+	display: flex;
+}
+
+.fighting__link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 15px 60px;
+	transition: 0.5s ease;
+}
+
+.fighting__link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 15px 80px;
+	transition: 0.5s ease;
+}
+
+
+/*============================================*//*============================================*/
+
+.fighting__games {
+
+}	
+
+.fighting__games-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 80px;
+	grid-row-gap: 50px;
+}
+
+.fighting__games-block {
+	display: flex;
+}
+
+.fighting__games-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.fighting__games-image {
+
+}
+
+.fighting__games-image img {
+	max-width: 100%;
+}
+
+.fighting__games-title {
+	font-size: 30px;
+	color: #6f2bc8;
+	margin: 25px 0;
+}
+
+.fighting__games-info {
+	flex: 1 1 auto;
+	text-align: justify;
+	border-left: 1px solid #6f2bc8;
+	border-right: 1px solid #6f2bc8;
+	padding: 0 15px;
+	margin: 0 0 25px 0;
+}
+
+.fighting__games-btn {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.fighting__games-link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 12px 50px;
+	transition: 0.5s ease;
+}	
+
+.fighting__games-link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 12px 60px;
+	transition: 0.5s ease;
+}
+
+/*============================================*//*============================================*/
+
+.strategy {
+	width: 100%;
+	min-height: 750px;
+	background-image: url(../img/strategy/back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 0 80px 0;
+}
+
+.strategy__block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 750px;
+}
+
+.strategy__item {
+	flex: 0 0 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+}
+
+.strategy__title {
+	font-size: 50px;
+	font-weight: 800;
+	margin: 0 0 40px 0;
+}
+
+.strategy__info {
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+
+.strategy__btn {
+	display: flex;
+}
+
+.strategy__link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 15px 60px;
+	transition: 0.5s ease;
+}
+
+.strategy__link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 15px 80px;
+	transition: 0.5s ease;
+}
+
+/*============================================*//*============================================*/
+
+.strategy__games {
+
+}
+
+.strategy__games-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.strategy__games-item {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 25px 35px 25px;
+}
+
+.strategy__games-image {
+
+}
+
+.strategy__games-image img {
+	max-width: 100%;
+}
+
+.strategy__games-title {
+	font-size: 30px;
+	color: #6f2bc8;
+	margin: 0 0 25px 0;
+	position: relative;
+}
+
+.strategy__games-title:after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 100%;
+	height: 1px;
+	background-color: #6f2bc8;
+}
+
+.strategy__games-info {
+	flex: 1 1 auto;
+	text-align: justify;
+	margin: 0 0 25px 0;
+}
+
+.strategy__games-btn {
+	display: flex;
+}
+
+.strategy__games-link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 12px 50px;
+	transition: 0.5s ease;
+}
+
+.strategy__games-link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 12px 60px;
+	transition: 0.5s ease;
+}
+
+/*============================================*//*============================================*/
+
+.mmorpg {
+	width: 100%;
+	min-height: 750px;
+	background-image: url(../img/mmorpg/back.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 0 80px 0;
+}
+
+.mmorpg__block {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 750px;
+	color: #fff;
+}
+
+.mmorpg__item {
+	flex: 0 0 55%;
+}
+
+.mmorpg__title {
+	font-size: 50px;
+	font-weight: 800;
+	margin: 0 0 40px 0;
+}
+
+.mmorpg__info {
+	margin: 0 0 40px 0;
+}
+
+.mmorpg__btn {
+	display: flex;
+}
+
+.mmorpg__link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 15px 60px;
+	transition: 0.5s ease;
+}
+
+.mmorpg__link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 15px 80px;
+	transition: 0.5s ease;
+}
+
+/*============================================*//*============================================*/
+
+.mmorpg__games {
+
+}
+
+.mmorpg__games-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 80px;
+	grid-row-gap: 50px;
+}
+
+.mmorpg__games-block {
+	display: flex;
+}
+
+.mmorpg__games-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.mmorpg__games-image {
+
+}
+
+.mmorpg__games-image img {
+	max-width: 100%;
+}
+
+.mmorpg__games-title {
+	font-size: 30px;
+	color: #6f2bc8;
+	margin: 25px 0;
+}
+
+.mmorpg__games-info {
+	flex: 1 1 auto;
+	text-align: justify;
+	border-left: 1px solid #6f2bc8;
+	border-right: 1px solid #6f2bc8;
+	padding: 0 15px;
+	margin: 0 0 25px 0;
+}
+
+.mmorpg__games-btn {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.mmorpg__games-link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 12px 50px;
+	transition: 0.5s ease;
+}
+
+.mmorpg__games-link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 12px 60px;
+	transition: 0.5s ease;
+}
+
+/*============================================*//*============================================*/
+
+.racing {
+	width: 100%;
+	min-height: 750px;
+	background-image: url(../img/racing/back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 0 80px 0;
+}
+
+.racing__block {
+	display: flex;
+	justify-content: center;
+	min-height: 750px;
+	color: #fff;
+}
+
+.racing__item {
+	flex: 0 0 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0 150px 0;
+}
+
+.racing__title {
+	font-size: 50px;
+	font-weight: 800;
+	margin: 0 0 40px 0;
+}
+
+.racing__info {
+	flex: 1 1 auto;
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+
+.racing__btn {
+
+}
+
+.racing__link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 15px 60px;
+	transition: 0.5s ease;
+}
+
+.racing__link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 15px 80px;
+	transition: 0.5s ease;
+}
+
+/*============================================*//*============================================*/
+
+.racing__games {
+
+}
+
+.racing__games-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.racing__games-image {
+
+}
+
+.racing__games-image img {
+	max-width: 100%;
+}
+
+.racing__games-item {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 25px 35px 25px;
+}
+
+.racing__games-title {
+	font-size: 30px;
+	color: #6f2bc8;
+	margin: 0 0 25px 0;
+	position: relative;
+}
+
+.racing__games-title:after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 100%;
+	height: 1px;
+	background-color: #6f2bc8;
+}
+
+.racing__games-info {
+	flex: 1 1 auto;
+	text-align: justify;
+	margin: 0 0 25px 0;
+}
+
+.racing__games-btn {
+	display: flex;
+}
+
+.racing__games-link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 12px 50px;
+	transition: 0.5s ease;
+}
+
+.racing__games-link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 12px 60px;
+	transition: 0.5s ease;
+}
+
+/*============================================*//*============================================*/
+
+.esports {
+	width: 100%;
+	min-height: 750px;
+	background-image: url(../img/esports/back.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 0 80px 0;
+}
+
+.esports__block {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	min-height: 750px;
+	color: #fff;
+}
+
+.esports__item {
+	flex: 0 0 60%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 60px 0;
+}
+
+.esports__title {
+	font-size: 50px;
+	font-weight: 800;
+	margin: 0 0 40px 0;
+}
+
+.esports__info {
+	text-align: justify;
+	margin: 0 0 40px 0;
+}
+
+.esports__btn {
+	display: flex;
+}
+
+.esports__link {
+	color: #fff;
+	background-color: #6f2bc8;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid #6f2bc8;
+	border-radius: 40px;
+	padding: 15px 60px;
+	transition: 0.5s ease;
+}
+
+.esports__link:hover {
+	color: #6f2bc8;
+	background-color: #fff;
+	padding: 15px 80px;
+	transition: 0.5s ease;
+}
+
+/*============================================*//*============================================*/
+
+#teams {
+	width: 100%;
+	min-height: 750px;
+	background-image: url(../img/teams/back.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0 0 80px 0;
+}
+
+.teams__block {
+	display: flex;
+	justify-content: center;
+}
+
+.teams__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+}
+
+.teams__title {
+	font-size: 80px;
+	font-weight: 800;
+	padding: 150px 0 0 0;
+}
+
+.teams__info {
+
+}
+
+
+/*============================================*//*============================================*/
+
+#footer {
+	width: 100%;
+	background-color: #000;
+	padding: 30px 0;
+}
+
+.footer__topline {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.footer__topline::before {
+	content: " ";
+	width: 100%;
+	height: 2px;
+	background-color: #08f300;
+	position: absolute;
+	left: -55%;
+	top: 47.5px;
+}
+
+.footer__topline::after {
+	content: " ";
+	width: 100%;
+	height: 2px;
+	background-color: #08f300;
+	position: absolute;
+	right: -55%;
+	top: 47.5px;
+}
+
+.footer__topline img {
+	width: 65px;
+	height: 75px;
+}
+
+.footer__bottomline {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.footer__bottomline::before {
+	content: " ";
+	width: 100%;
+	height: 2px;
+	background-color: #08f300;
+	position: absolute;
+	left: -55%;
+	top: 47.5px;
+}
+
+.footer__bottomline::after {
+	content: " ";
+	width: 100%;
+	height: 2px;
+	background-color: #08f300;
+	position: absolute;
+	right: -55%;
+	top: 47.5px;
+}
+
+.footer__bottomline img {
+	width: 65px;
+	height: 75px;
+	transform: scaleY(-1);
+}
+
+.footer__row {
+	display: flex;
+	padding: 30px 0;
+}
+
+.footer__section {
+	flex: 0 0 33.333%;
+}
+
+.footer__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+}
+
+.footer__name {
+	font-size: 30px;
+	line-height: 30px;
+	margin: 0 0 15px 0;
+}
+
+.footer__subname {
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	margin: 0 0 15px 0;
+}
+
+.footer__developer {
+	font-size: 24px;
+}
+
+.footer__title {
+	font-size: 50px;
+	margin: 0 0 20px 0;
+}
+
+.footer__subtitle {
+	font-size: 20px;
+	font-style: italic;
+	margin: 0 0 20px 0;
+}
+
+.footer__copy {
+	
+}
+
+.footer__contacts {
+	font-size: 30px;
+	margin: 0 0 10px 0;
+}
+
+.footer__phone {
+	font-size: 16px;
+	margin: 0 0 5px 0;
+}
+.footer__number {
+	margin: 0 0 10px 0;
+}
+
+.footer__mail {
+	font-size: 16px;
+	margin: 0 0 5px 0;
+}
+.footer__adress {
+	margin: 0 0 10px 0;
+}
+
+.footer__social {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__links {
+	padding: 0 7px;
+}
+
+.footer__links img {
+	max-width: 25px;
+}
+
+/* Линия сверху ==============================================================================*/
+
+.topline {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: 0 0 80px 0;
+}
+
+.topline::before {
+	content: " ";
+	width: 100%;
+	height: 3px;
+	background-color: #6f2bc8;
+	position: absolute;
+	left: -55%;
+	top: 47.5px;
+}
+
+.topline::after {
+	content: " ";
+	width: 100%;
+	height: 3px;
+	background-color: #6f2bc8;
+	position: absolute;
+	right: -55%;
+	top: 47.5px;
+}
+
+.topline img {
+	width: 85px;
+	height: 95px;
+}
+
+/* Линия снизу =================================================================================*/
+
+.bottomline {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: 80px 0 80px 0;
+}
+
+.bottomline::before {
+	content: " ";
+	width: 100%;
+	height: 3px;
+	background-color: #6f2bc8;
+	position: absolute;
+	left: -55%;
+	top: 47.5px;
+}
+
+.bottomline::after {
+	content: " ";
+	width: 100%;
+	height: 3px;
+	background-color: #6f2bc8;
+	position: absolute;
+	right: -55%;
+	top: 47.5px;
+}
+
+.bottomline img {
+	width: 85px;
+	height: 95px;
+	transform: scaleY(-1);
+}
+
+/*============================================*//*============================================*/

@@ -1,0 +1,205 @@
+
+/*=========================================Обнуление========================================*/
+
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+/*============================================*//*============================================*/
+
+body {
+	min-width: 1300px;
+}
+
+/*============================================*//*============================================*/
+
+.esports__teams {
+
+}
+
+.teams__slider {
+
+}
+
+.teams__section {
+	display: flex;
+}
+
+.teams__section-images {
+	flex: 0 0 45%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	grid-row-gap: 20px;
+}
+
+.teams__section-image {
+	
+}
+
+.teams__section-image img {
+	max-width: 100%;
+}
+
+.teams__section-item {
+	flex: 0 0 55%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+}
+
+.teams__section-title {
+	font-size: 35px;
+	color: #6f2bc8;
+	margin: 0 0 20px 0;
+}
+
+.teams__section-info {
+	flex: 1 1 auto;
+}
+
+.teams__section-icon {
+	display: flex;
+	justify-content: center;
+}
+
+.teams__section-icon img {
+	max-width: 100%;
+}
+
+/*============================================*//*============================================*/
+
+/*Слайдер*/
+.slick-slider {
+
+}
+
+/*Ограничивающая оболочка*/
+.slick-list {
+
+}
+
+/*Лента слайдов*/
+.slick-track {
+
+}
+
+/*Слайд*/
+.slick-slide {
+
+}
+
+/*Активный слайд*/
+.slick-slide.slick-active {
+
+}
+
+/*Основной слайд*/
+.slick-slide.slick-current {
+
+}
+
+/*Слайд по центру*/
+.slick-slide.slick-center {
+
+}
+
+/*Стрелка*/
+.slick-arrow {
+
+}
+
+/*Стрелка влево*/
+.slick-arrow.slick-prev {
+
+}
+
+/*Стрелка вправо*/
+.slick-arrow.slick-next {
+
+}
+
+/*Не активная стрелка*/
+.slick-arrow.slick-disabled {
+
+}
+
+/*Точки*/
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0 0 0;
+}
+
+.slick-dots li {
+	margin: 0 10px;
+}
+
+.slick-dots li.slick-active button {
+	background-color: #6f2bc8;
+}
+
+.slick-dots button {
+	font-size: 0;
+	width: 13px;
+	height: 13px;
+	background-color: #fff;
+	border: 2px solid #6f2bc8;
+	border-radius: 3px;
+}
+
+/*============================================*//*============================================*/
+
+/*Конкретный слайдер которому присвоен определённый класс*/
+
+/*Вместо "name" указать присвоеный класс слайдера*/
+
+.teams__slider {
+	position: relative;
+	padding: 0 90px;
+	z-index: 10;
+}
+
+.teams__slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	font-size: 0;
+	margin: -70px 0 0 0;
+	width: 70px;
+	height: 70px;
+}
+
+.teams__slider .slick-arrow.slick-prev {
+	left: 0;
+	background-color: transparent;
+	background-image: url(../img/about/arrow-left.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.teams__slider .slick-arrow.slick-next {
+	right: 0;
+	background-color: transparent;
+	background-image: url(../img/about/arrow-right.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.name__item {
+
+}
+
+/*============================================*//*============================================*/
